@@ -1,0 +1,225 @@
+html {
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Play', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 72px;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    background: #504f4f; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.frm {
+    display: block;
+    margin-top: 8vh;
+}
+option {
+    color: red;
+    text-align: center;
+    background-color: rgb(4, 2, 0);
+    font-weight: 150;
+    font-size: larger;
+}
+select {
+    font-size: x-large;
+    outline: none;
+    width: 30vw;
+    border-radius: 5px;
+    height: 36px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.info {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    color: black;
+}
+input {
+    width: 12vw;
+}
+#but {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+#add-item {
+    margin: auto;
+    width: 180px;
+    height: 35px;
+    background: #e3e3e3; 
+    color: black;
+    border: 1px solid black;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: larger;
+}
+#add-item:hover{
+ background: #96c491; 
+ box-shadow: 6px 2px 10px 2px #96c491;
+}
+#calculate {
+    margin: auto auto;
+    width: 180px;
+    height: 35px;
+    background: #e3e3e3; 
+    border: 1px solid black;
+    color: black;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: larger;
+}
+#calculate:hover  {
+    background-color: rgb(212, 177, 96);
+    box-shadow: 6px 2px 10px 2px rgb(212, 177, 96);
+}
+#cl {
+    position: relative;
+    margin-left: 8px;
+}
+#dipl {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin-top: 6vh;
+    font-size: 23px;
+    color: black;
+    margin-bottom: 18vh;
+    font-weight: 600;
+}
+textarea {
+    /* margin-top: 5px; */
+    width: 200px;
+    height: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 12px;
+    border-radius: 8px;
+    outline: none;
+    align-items: center;
+}
+#foot {
+    background: linear-gradient(lightblue,rgb(131, 131, 213));
+    font-size: larger;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+    padding-bottom: 1.5vh;
+    width: 100%;
+}
+.info-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+table {
+    width: 60vw;
+	border-collapse: collapse;
+	margin: 10px auto;
+}
+th, td {
+	padding: 10px;
+	border: 1px solid #676666;
+}
+th {
+	background-color: #bebbbb;
+    font-size: x-large;
+}
+input[type="text"], input[type="number"] {
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+input[type="text"][readonly] {
+	background-color: #dedada;
+    color: black;
+}
+#buttons {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0;
+    border-radius: 9px;
+}
+#result {
+	text-align: center;
+	margin-top: 20px;
+}
+#total-gst {
+	font-weight: bold;
+	font-size: 18px;
+}
+.pr {
+    margin-bottom: 4px;
+    font-size: x-large;
+}
+@media (max-width : 600px) {
+    #dipl {
+        flex-direction: column;
+        font-size: larger;
+        margin-top: 4vh;
+    }
+    h1 {
+        font-size: 44px;
+        margin-bottom: 4vh;
+        margin-top: 4vh;
+    }
+    table {
+        width: 95vw;
+        margin-top: 4px;
+    }
+    th,td {
+        font-size: x-small;
+        padding: 5px;
+    }
+    #but {
+        width: 90vw;
+    }
+    #add-item,#calculate{
+        font-size: x-small;
+        width: 30vw;
+        height: 25px;
+    } 
+    input {
+        font-size: x-small;
+        width: 15vw;
+    }
+    textarea {
+        margin-top: 5px;
+        width: 140px;
+        height: 16px;
+        font-size: 12px;
+        margin-left: 12px;
+        border-radius: 6px;
+    }
+    #foot,.pr {
+        font-size: small;
+        margin-bottom: 2px;
+    }
+    pre {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+}

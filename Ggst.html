@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="GC.png">
+    <title>Gross GST</title>
+    <link rel="stylesheet" href="DG.css">
+</head>
+<body >
+    <h1>
+        Gross GST
+    </h1>
+    <center>
+    <form action="cal()" class="frm">
+        <div class="info"><label for="amt">
+        Amount(₹) :</label><input type="number" placeholder="Enter Value" id="amt"> 
+        <span onclick="clr()" id="cl">
+            <i class="fa-sharp fa-solid fa-xmark"></i> 
+        </span><br>
+        </div>
+        <div class="info"><label for="no">
+        Quantity :</label>&emsp13;&emsp13;<input type="number" placeholder="Quantity (1)" id="no">
+        <span onclick="clr2()" id="cl">
+            <i class="fa-sharp fa-solid fa-xmark"></i> 
+        </span><br>
+        </div>
+        <div class="info" style="margin-bottom: 2vh;"><label for="Gper"> GST% : </label><br></div>
+        <select name="GST%" id="Gper">
+            <option value="0">0% (Domestic items)</option>
+            <option value="5">5% (Edables & Energy)</option>
+            <option value="12">12% (Electronics & Packed items)</option>
+            <option value="18">18% (Daily needs & Hardware)</option>
+            <option value="28">28% (Automobiles & Luxury)</option>
+        </select>
+    </form>
+    <div id="but">
+        <button id="add" onclick="reslt1()">Add GST</button>
+        <button id="sub" onclick="reslt2()">Remove GST</button><br>
+    </div>
+    <div id="dipl">
+        <div><span>Price :</span><textarea  id="a" placeholder="Price"></textarea></div>
+        <div><span>GST :&emsp13;</span><textarea  id="ab" placeholder="GST"></textarea></div>
+        <div><span>Total :</span><textarea id="ans" placeholder="Total"></textarea></div>
+    </div>
+    <footer id="foot">
+            <div>
+                <pre><span onclick="hm()">Home <i class="fa-solid fa-house" style="font-size: medium;"></i></span>    <span onclick="secpg()">Daily GST</span></pre>
+            </div>
+            ©️COPYRIGHT-2023
+    </footer>
+    </center>
+    <script src="DG.js"></script>
+</body>
+</html>

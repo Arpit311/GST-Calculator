@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="GC.png">
+    <title>Daily GST</title>
+    <link rel="stylesheet" href="SDG.css">
+</head>
+<body >
+    <h1>
+        Daily GST
+    </h1>
+    <center>
+        <div>
+            <form id="gst-form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Price (Rs)</th>
+                            <th>GST (%)</th>
+                            <th>GST (Rs)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="item-table">
+                        <tr>
+                            <td><input type="text" name="item_name[]" placeholder="Item name"></td>
+                            <td><input type="number" name="price[]" placeholder="Item price"></td>
+                            <td><input type="number" name="gst[]" placeholder="GST percentage"></td>
+                            <td><input type="text" name="gst_amount[]" placeholder="GST amount" readonly></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </form>
+    <div id="but">
+        <button id="add-item">Add GST</button>
+        <button id="calculate">Calculate GST</button><br>
+    </div>
+    <div id="dipl">
+        <div><span>Price :</span><textarea  id="a" placeholder="Price"></textarea></div>
+        <div><span>GST :&emsp13;</span><textarea  id="ab" placeholder="GST"></textarea></div>
+        <div><span>Total :</span><textarea id="ans" placeholder="Total"></textarea></div>
+    </div>
+    <footer id="foot">
+            <div>
+                <pre class="pr"><span onclick="hm()">Home <i class="fa-solid fa-house" style="font-size: medium;"></i></span>    <span onclick="secpg()">Gross GST</span></pre>
+            </div>
+            ©️COPYRIGHT-2023
+    </footer>
+    </center>
+    <script src="GG.js"></script>
+</body>
+</html>
